@@ -1,0 +1,47 @@
+\documentclass[10pt,aspectratio=169]{beamer}
+\usepackage{luatexja} % 日本語を使えるようにする。
+\usepackage{newunicodechar} % 句読点の置き換え
+\newunicodechar{。}{．}
+\newunicodechar{、}{，}
+\usepackage{mathtools,amssymb,amsthm}
+\usepackage{bm} % ベクトルの表記など、ボールド体を使う為のパッケージ。使い方はここ(https://medemanabu.net/latex/vector/)を参照。
+\usepackage{physics} % 使い方はここ(https://qiita.com/HelloRusk/items/ce9f49e9b3fc0344ae23)を参照。
+\usepackage{ascmac}
+\usepackage{fancybox} % ascmacと共に、枠付き文章の為のパッケージ。使い方はここ(http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/box/box.php)を参照。
+\usepackage[bottom]{footmisc} % 脚注をページ下部に固定。詳細はここ(https://konoyonohana.blog.fc2.com/blog-entry-289.html)を参照。
+\usepackage{graphicx}
+%\usepackage{here} % スライドにおいては要らない。
+\usepackage{subcaption}
+%\usepackage{indentfirst} % スライドにおいては要らない。
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{setspace} % \setstretch{}を使う為に必要。
+\usepackage{hyperref}
+\usepackage{natbib}
+\renewcommand{\kanjifamilydefault}{\gtdefault} %既定をゴシック体に
+\usefonttheme{professionalfonts} % Beamerによる数式フォントの置き換えを阻止
+\usetheme[numbering=fraction]{metropolis}
+\definecolor{tractorred}{rgb}{0.99, 0.05, 0.21}
+\definecolor{limegreen}{rgb}{0.2, 0.8, 0.2}
+% Theme colors are derived from these two elements
+% 色変更はここ(https://latexcolor.com/)から行える
+\setbeamercolor{alerted text}{fg=tractorred}
+\setbeamercolor{frametitle}{bg=limegreen}
+
+\title{}
+\subtitle{}
+\date{\today}
+\author{}
+\institute{}
+\begin{document}
+\maketitle
+\setstretch{1.5}
+\begin{frame}{}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+  \bibliographystyle{econ-aea}
+  \bibliography{.bib}
+\end{frame}
+\end{document}
